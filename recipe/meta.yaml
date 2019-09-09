@@ -1,5 +1,5 @@
-{% set version = "0.23.15" %}
-{% set sha256 = "f7c139a0c77a1f0012619003e542060ba8f94799a0ef463026db390680e4d798" %}
+{% set version = "0.23.17" %}
+{% set sha256 = "5447b25d66c05f86cce5bc8856f7a074be84c186730e32c74069ca03386d7c1e" %}
 
 package:
   name: p11-kit
