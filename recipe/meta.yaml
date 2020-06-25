@@ -1,5 +1,5 @@
-{% set version = "0.23.18.1" %}
-{% set sha256 = "34c3bd8c0050dd7c4e6228aecf0f168de0a1b34562ddbf74a1c70904c2523c6f" %}
+{% set version = "0.23.20  " %}
+
 
 package:
   name: p11-kit
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/p11-glue/p11-kit/releases/download/{{ version }}/p11-kit-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 8f6116f34735f6902e9db461c5dbe3e7e25b5cb8c38f42ea2a5aede1cf693749
 
 build:
   number: 0
@@ -39,3 +39,4 @@ about:
 extra:
   recipe-maintainers:
     - chapmanb
+    - marcelotrevisani
