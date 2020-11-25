@@ -5,11 +5,9 @@ Home: https://github.com/p11-glue/p11-kit
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/p11-kit-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides a way to load and enumerate PKCS#11 modules
-
-
 
 Current build status
 ====================
