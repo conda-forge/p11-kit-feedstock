@@ -1,4 +1,4 @@
-{% set version = "0.23.21" %}
+{% set version = "0.23.22" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/p11-glue/p11-kit/releases/download/{{ version }}/p11-kit-{{ version }}.tar.xz
-  sha256: f1baa493f05ca0d867f06bcb54cbb5cdb28c756db07207b6e18de18a87b10627
+  sha256: 8a8f40153dd5a3f8e7c03e641f8db400133fb2a6a9ab2aee1b6d0cb0495ec6b6
 
 build:
-  number: 1
+  number: 0
   # Windows: libtasn1 not available
   # OSX: libtasn1 not found despite dependency: 
   # https://travis-ci.org/conda-forge/staged-recipes/builds/440551277#L564
