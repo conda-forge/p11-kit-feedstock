@@ -23,6 +23,7 @@ requirements:
   host:
     - libffi
     - libtasn1
+    - ca-certificates
   run:
     - libffi
     - libtasn1
