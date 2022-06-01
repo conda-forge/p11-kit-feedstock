@@ -20,6 +20,7 @@ requirements:
     - make
     - pkg-config
     - gnuconfig  # [unix]
+    - autoconf   # [build_platform != target_platform]
   host:
     - libffi
     - libtasn1
