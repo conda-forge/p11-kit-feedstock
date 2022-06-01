@@ -6,7 +6,7 @@ if [[ $CONDA_BUILD_CROSS_COMPILATION == "1" ]]; then
     cp $BUILD_PREFIX/share/gnuconfig/config.* .
     curl -L -O https://raw.githubusercontent.com/p11-glue/p11-kit/0.23.21/autogen.sh
     chmod +x autogen.sh
-    ./autogen.sh
+    bash ./autogen.sh
 fi
 
 ./configure --prefix=$PREFIX \
