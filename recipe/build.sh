@@ -5,6 +5,7 @@ if [[ $CONDA_BUILD_CROSS_COMPILATION == "1" ]]; then
     cp $BUILD_PREFIX/share/gnuconfig/config.* .
 fi
 
-./configure --prefix=$PREFIX
+./configure --prefix=$PREFIX \
+            --with-trust-paths=$PREFIX/ssl/cert.pem
 make
 make install
