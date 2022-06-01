@@ -1,4 +1,5 @@
 #!/bin/bash
+set -x
 
 if [[ $CONDA_BUILD_CROSS_COMPILATION == "1" ]]; then
     # Get an updated config.sub and config.guess
