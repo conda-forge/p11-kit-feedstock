@@ -22,6 +22,7 @@ requirements:
     - gnuconfig  # [unix]
     - autoconf   # [build_platform != target_platform]
     - automake   # [build_platform != target_platform]
+    - libtool    # [build_platform != target_platform]
   host:
     - libffi
     - libtasn1
