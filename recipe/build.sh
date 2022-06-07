@@ -14,4 +14,7 @@ fi
 ./configure --prefix=$PREFIX \
             --with-trust-paths=$PREFIX/ssl/cert.pem
 make
+if [[ $CONDA_BUILD_CROSS_COMPILATION != "1" ]]; then
+    make check
+fi
 make install
