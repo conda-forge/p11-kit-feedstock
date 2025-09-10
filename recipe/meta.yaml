@@ -1,4 +1,4 @@
-{% set version = "0.25.3" %}
+{% set version = "0.25.7" %}
 
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/p11-glue/p11-kit/releases/download/{{ version }}/p11-kit-{{ version }}.tar.xz
-  sha256: d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
+  sha256: 6b31a9defa34802d6d88df5010b8b14e24051bf4d15070e8c920d5e8717555a0
 
 build:
   number: 0
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
     - pkg-config
     - gnuconfig  # [unix]
