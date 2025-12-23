@@ -10,7 +10,7 @@ source:
   sha256: d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
 
 build:
-  number: 0
+  number: 1
   # Windows: libtasn1 not available
   skip: true  # [win]
   run_exports:
@@ -19,12 +19,14 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make
     - pkg-config
-    - gnuconfig  # [unix]
-    - autoconf   # [build_platform != target_platform]
-    - automake   # [build_platform != target_platform]
-    - libtool    # [build_platform != target_platform]
+    - gnuconfig      # [unix]
+    - autoconf       # [build_platform != target_platform]
+    - automake       # [build_platform != target_platform]
+    - gettext-tools  # [build_platform != target_platform]
+    - libtool        # [build_platform != target_platform]
   host:
     - libffi
     - libtasn1
