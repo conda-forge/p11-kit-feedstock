@@ -193,4 +193,5 @@ Feedstock Maintainers
 * [@chapmanb](https://github.com/chapmanb/)
 * [@leofang](https://github.com/leofang/)
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
+* [@traversaro](https://github.com/traversaro/)
 
