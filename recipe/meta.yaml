@@ -1,4 +1,4 @@
-{% set version = "0.25.3" %}
+{% set version = "0.25.10" %}
 
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/p11-glue/p11-kit/releases/download/{{ version }}/p11-kit-{{ version }}.tar.xz
-  sha256: d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc
+  sha256: a62a137a966fb3a9bbfa670b4422161e369ddea216be51425e3be0ab2096e408
 
 build:
-  number: 1
+  number: 0
   # Windows: libtasn1 not available
   skip: true  # [win]
   run_exports:
